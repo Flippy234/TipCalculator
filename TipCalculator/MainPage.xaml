@@ -8,24 +8,35 @@
             Spacing="25"
             Padding="20,40,20,20">
             
+            
             <!-- This work -->
-            <Label FontSize="32" FontAttributes="Bold" Text="Bill Amount:"/>
-            <Entry x:Name="txtBillAmount" Keyboard="Numeric" />e
+            <Label FontSize="40" FontAttributes="Bold" Text="Bill Amount:"/>
+            <Entry x:Name="txtBillAmount" Keyboard="Numeric" />
             
-            <Label FontSize="32" FontAttributes="Bold" Text="Service Quality:"/>
-            <Button Text="Calculate Tip" FontSize="24" TextColor="White" FontAttributes="Bold" Clicked="FifteenPercentTip_OnClicked"/>
-            <Label x:Name="lblTip1" Text="%15 Tip:" FontSize="32" FontAttributes="Bold"/>
+            <Label FontSize="40" FontAttributes="Bold" Text="Service Quality:" VerticalOptions="Center"/>
             
-            <!-- <Button Text="Calculate Tip" FontSize="24" TextColor="White" FontAttributes="Bold" Clicked="TwentyPercentTip_OnClicked"/> -->
-            <!-- <Label x:Name="lblTip2" Text="%20 Tip:" FontSize="32" FontAttributes="Bold"/> -->
-            <!-- -->
-            <!-- <Button Text="Calculate Tip" FontSize="24" TextColor="White" FontAttributes="Bold" Clicked="TwentyFivePercentTip_OnClicked"/> -->
-            <!-- <Label x:Name="lblTip3" Text="%25 Tip:" FontSize="32" FontAttributes="Bold"/> -->
+            <HorizontalStackLayout Spacing="15">
+            <Button Text="Calculate Tip" WidthRequest="360" HeightRequest="80" FontSize="36" TextColor="White" FontAttributes="Bold" Clicked="FifteenPercentTip_OnClicked"/>
+            <Label x:Name="lblTip1" Text="15%" FontSize="36" FontAttributes="Bold" />
+            </HorizontalStackLayout>
             
-            <Label x:Name="lblTipAmount" HorizontalOptions="Center" FontSize="36" Margin="0,50" />
-            <Label x:Name="lblDivide" Text=" | " HorizontalOptions="Center" FontSize="36" Margin="0,50" />
-            <Label x:Name="lblTotalAmount" HorizontalOptions="Center" FontSize="36" Margin="0,100" />
-      
+            <HorizontalStackLayout Spacing="15">
+            <Button Text="Calculate Tip" WidthRequest="360" HeightRequest="80" FontSize="36" TextColor="White" FontAttributes="Bold" Clicked="TwentyPercentTip_OnClicked"/>
+            <Label x:Name="lblTip2" Text="20%" FontSize="36" FontAttributes="Bold" />
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="15">
+            <Button Text="Calculate Tip" WidthRequest="360" HeightRequest="80" FontSize="36" TextColor="White" FontAttributes="Bold" Clicked="TwentyFivePercentTip_OnClicked"/>
+            <Label x:Name="lblTip3" Text="25%" FontSize="36" FontAttributes="Bold" />
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="25" VerticalOptions="Center">
+                <Label x:Name="lblTipAmount" FontSize="40" FontAttributes="Bold" />
+            <Label x:Name="lblDivide" Text=" | "  FontSize="40" />
+            <Label x:Name="lblTotal" Text="Total: " FontSize="40" FontAttributes="Bold"/>
+            <Label x:Name="lblTotalAmount" FontSize="40" FontAttributes="Bold" />
+            </HorizontalStackLayout>
+            
             
 
         </VerticalStackLayout>
