@@ -10,6 +10,7 @@ public partial class MainPage : ContentPage
 
     private void FifteenPercentTip_OnClicked(object sender, EventArgs e)
     {
+        //Work on this
         //Multiply bill amount by percent tip
         double dblBillAmount, dblTipAmount, dblTotalAmount;
         Double.TryParse(txtBillAmount.Text, out dblBillAmount);
