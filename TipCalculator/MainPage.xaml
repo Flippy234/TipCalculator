@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="20,40,20,20">
+            
+            <Label FontSize="32" FontAttributes="Bold" Text="Bill Amount:"/>
+            <Entry x:Name="txtBillAmount" Keyboard="Numeric" />e
+            
+            <Label FontSize="32" FontAttributes="Bold" Text="Service Quality:"/>
+            <Button Text="Calculate Tip" FontSize="24" TextColor="White" FontAttributes="Bold" Clicked="FifteenPercentTip_OnClicked"/>
+            <Label x:Name="lblTip1" Text="%15 Tip:" FontSize="32" FontAttributes="Bold"/>
+            
+            <!-- <Button Text="Calculate Tip" FontSize="24" TextColor="White" FontAttributes="Bold" Clicked="TwentyPercentTip_OnClicked"/> -->
+            <!-- <Label x:Name="lblTip2" Text="%20 Tip:" FontSize="32" FontAttributes="Bold"/> -->
+            <!-- -->
+            <!-- <Button Text="Calculate Tip" FontSize="24" TextColor="White" FontAttributes="Bold" Clicked="TwentyFivePercentTip_OnClicked"/> -->
+            <!-- <Label x:Name="lblTip3" Text="%25 Tip:" FontSize="32" FontAttributes="Bold"/> -->
+            
+            <Label x:Name="lblTipAmount" HorizontalOptions="Center" FontSize="36" Margin="0,50" />
+            <Label x:Name="lblDivide" Text=" | " HorizontalOptions="Center" FontSize="36" Margin="0,50" />
+            <Label x:Name="lblTotalAmount" HorizontalOptions="Center" FontSize="36" Margin="0,100" />
+      
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
